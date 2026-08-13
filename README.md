@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=""<img width="1408" height="768" alt="Gemini_Generated_Image_6ynoiu6ynoiu6yno" src="https://github.com/user-attachments/assets/345463b7-2220-4202-b77b-6418f8e24906" />
+  <img src="![Uploading Gemini_Generated_Image_6ynoiu6ynoiu6yno.png…]()
 " alt="Smart Resilience AI Logo" width="120" />
   <h1>Smart Resilience AI</h1>
   <p><b>Enterprise Network Security & Threat Intelligence Platform</b></p>
