@@ -1,18 +1,10 @@
 <div align="center">
-  <img 
-    src="./src/assets/logo.png" 
-    alt="Smart Resilience AI Logo" 
-    width="100" 
-    height="100" 
-    style="border-radius: 16px; box-shadow: 0px 0px 20px rgba(6, 182, 212, 0.5);"
-  />
-  <h1 style="margin-top: 10px;">Smart Resilience AI</h1>
-  <p><b>Enterprise Network Security & Threat Intelligence Platform</b></p>
-</div><div align="center">
-  <img src="./src/assets/logo.png" alt="Smart Resilience AI Logo" width="120" />
+  <img src=""<img width="1408" height="768" alt="Gemini_Generated_Image_6ynoiu6ynoiu6yno" src="https://github.com/user-attachments/assets/345463b7-2220-4202-b77b-6418f8e24906" />
+" alt="Smart Resilience AI Logo" width="120" />
   <h1>Smart Resilience AI</h1>
   <p><b>Enterprise Network Security & Threat Intelligence Platform</b></p>
 </div>
+ 
 
 # Run and deploy your AI Studio app
 
