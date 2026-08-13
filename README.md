@@ -1,14 +1,20 @@
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-# Smart Resilience AI 🛡️
-Smart Resilience AI is an enterprise-grade intrusion detection and cybersecurity analytics dashboard designed for modern Security Operations Centers (SOC).  🤖 AI Copilot: Powered by Google Gemini API for real-time security reporting and automated threat analysis.  🌍 Geo-Threat Heatmap: Interactive D3.js spatial grid and attack 
+# Run and deploy your AI Studio app
 
-Enterprise Network Security & Threat Intelligence Platform powered by Gemini AI, featuring ML anomaly detection, interactive D3 threat mapping, and live SIEM log analysis.
+This contains everything you need to run your app locally.
 
-## ✨ Key Features
-* **🤖 AI Security Copilot:** Real-time security reporting & automated threat analysis powered by Google Gemini.
-* **🌍 Geo-Threat Heatmap:** Interactive D3.js spatial grid and attack vector intensity matrix.
-* **📊 Live SIEM & Topology:** Real-time ML anomaly detection, live network topology visualizer, and log stream auditing.
+View your app in AI Studio: https://ai.studio/apps/009c9d2c-5fd3-4be3-9c31-5af4c6970130
 
-## 🛠️ Tech Stack
-* **Frontend:** React, TypeScript, Vite, Tailwind CSS, D3.js
-* **Backend / API:** Node.js, Express (`server.ts`), Google Gemini API
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

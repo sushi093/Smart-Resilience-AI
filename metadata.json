@@ -1,0 +1,8 @@
+{
+  "name": "Smart Resilience AI",
+  "description": "Enterprise Network Analysis \u0026 Intrusion Detection System with ML anomaly detection, SIEM log analysis, live topology visualization, and AI security assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
