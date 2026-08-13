@@ -1,4 +1,8 @@
-
+<div align="center">
+  <img src="./src/assets/logo.png" alt="Smart Resilience AI Logo" width="120" />
+  <h1>Smart Resilience AI</h1>
+  <p><b>Enterprise Network Security & Threat Intelligence Platform</b></p>
+</div>
 
 # Run and deploy your AI Studio app
 
