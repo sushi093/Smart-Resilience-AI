@@ -44,23 +44,20 @@ Proactive Intrusion Detection: Identifies zero-day anomalies, unauthorized port 
 
 This contains everything you need to run your app locally.
 
-🏗️ System Architecture & Data Flow[ Incoming Network Logs / Sensors ]
-                │
-                ▼
-      ┌──────────────────┐
-      │   Express API    │ ◄─── Processes SIEM streams & raw logs
-      └────────┬─────────┘
-               │
-      ┌────────┴─────────┐
-      │ Gemini AI Engine │ ◄─── Performs threat reasoning & report synthesis
-      └────────┬─────────┘
-               │
-               ▼
-     ┌───────────────────┐
-     │ React Front-End   │
-     │  (D3.js + UI)     │ ◄─── Renders heatmaps, topologies & copilot UI
-     └───────────────────┘
-🛡️ Deep-Dive Module Breakdown1. Interactive D3.js Geo-Heatmap & Vector GridCurved Attack Arcs: Generates SVG bezier paths mapping real-time attack origins (e.g., Eastern Europe, East Asia) into your target SOC regional gateway.Vector Intensity Matrix: Categorizes attack frequency by technical classification:Layer 3/4: SYN Floods, UDP Amplification, ICMP Sweeps.Layer 7: SQL Injection (SQLi), Cross-Site Scripting (XSS), Auth Brute-Force, API Credential Stuffing.Mitigation Triggering: Allows security operators to execute active defense actions (e.g., IP Blacklisting, Rate-Limiting, Port Isolation) directly from regional modal views.2. Autonomous Gemini Copilot IntegrationNatural Language Incident Triage: Translates complex JSON log payloads into human-readable incident root-cause summaries.Playbook Generation: Recommends specific Incident Response (IR) steps compliant with security frameworks like NIST SP 800-61 or MITRE ATT&CK.Executive Summary Generator: Converts raw alert telemetry into structured Markdown executive reports for CISOs and IT management.3. ML Anomaly Engine & Threat TopologyBaseline Behavioral Tracking: Monitors node-to-node communications to establish normal network traffic baselines.Zero-Day & Exfiltration Alerts: Detects sudden bursts in outbound payload volume (potential data exfiltration) or unauthorized lateral movement between subnet nodes.Visual Topology Graph: Dynamic visual rendering showing active connections between endpoints, jump boxes, databases, and perimeter firewalls—highlighting affected assets in real time when breached.💡 Potential Extension Ideas for Your RepositoryIf you want to keep expanding the project on GitHub, consider adding:Webhook Alerting: Slack/Discord integrations to notify team members when high-severity alerts trigger.Exportable Audit Logs: Exporting filtered SIEM events as .csv or .json for compliance reporting.Custom Threat Rules: A UI tab allowing users to write custom Detection Rules (e.g., YARA / Sigma rules).
+
+🛡️ Deep-Dive Module Breakdown1.
+Interactive D3.js Geo-Heatmap & Vector GridCurved Attack Arcs: Generates SVG bezier paths mapping real-time attack origins (e.g., Eastern Europe, East Asia) into your target SOC regional gateway.
+
+Vector Intensity Matrix: Categorizes attack frequency by technical classification:Layer 3/4: SYN Floods, UDP Amplification, ICMP Sweeps.
+Layer 7: SQL Injection (SQLi), Cross-Site Scripting (XSS), Auth Brute-Force, API Credential Stuffing.Mitigation Triggering: Allows security operators to execute active defense actions (e.g., IP Blacklisting, Rate-Limiting, Port Isolation) directly from regional modal views. 
+
+2. Autonomous Gemini Copilot IntegrationNatural Language Incident Triage: Translates complex JSON log payloads into human-readable incident root-cause summaries.
+Playbook Generation: Recommends specific Incident Response (IR) steps compliant with security frameworks like NIST SP 800-61 or MITRE ATT&CK.Executive Summary Generator: Converts raw alert telemetry into structured Markdown executive reports for CISOs and IT management.
+
+3. ML Anomaly Engine & Threat TopologyBaseline Behavioral Tracking: Monitors node-to-node communications to establish normal network traffic baselines.Zero-Day & Exfiltration Alerts: Detects sudden bursts in outbound payload volume (potential data exfiltration) or unauthorized lateral movement between subnet nodes.Visual Topology Graph: Dynamic visual rendering showing active connections between endpoints, jump boxes, databases, and perimeter firewalls—highlighting affected assets in real time when breached.
+
+
+💡 Potential Extension Ideas for Your RepositoryIf you want to keep expanding the project on GitHub, consider adding:Webhook Alerting: Slack/Discord integrations to notify team members when high-severity alerts trigger.Exportable Audit Logs: Exporting filtered SIEM events as .csv or .json for compliance reporting.Custom Threat Rules: A UI tab allowing users to write custom Detection Rules (e.g., YARA / Sigma rules).
 ## Run Locally
 
 **Prerequisites:**  Node.js
